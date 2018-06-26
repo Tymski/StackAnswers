@@ -1,0 +1,43 @@
+{
+    "name": "stackoverflowanswerextenstion",
+    "displayName": "StackoverflowAnswerExtenstion",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "Tymski",
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sayHelloPlsWork",
+        "onCommand:extension.sayHelloHello",
+        "onCommand:extension.stackOverflowAnswer"
+    ],
+    "main": "./extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.stackOverflowAnswer",
+                "title": "StackOverflow Answer"
+            }
+        ]
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.11.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "jsdom": "^11.11.0",
+        "lodash": "^4.17.10",
+        "request": "^2.87.0"
+    }
+}
